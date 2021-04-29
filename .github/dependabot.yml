@@ -1,0 +1,34 @@
+version: 2
+updates:
+- package-ecosystem: cargo
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "12:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: regex
+    versions:
+    - 1.4.3
+    - 1.4.4
+    - 1.4.5
+    - 1.4.6
+  - dependency-name: notify
+    versions:
+    - 4.0.16
+  - dependency-name: serde
+    versions:
+    - 1.0.124
+    - 1.0.125
+  - dependency-name: clap
+    versions:
+    - 2.33.3
+  - dependency-name: console
+    versions:
+    - 0.8.0
+  - dependency-name: predicates
+    versions:
+    - 1.0.7
+  - dependency-name: smallvec
+    versions:
+    - 0.6.14
